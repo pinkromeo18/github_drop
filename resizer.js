@@ -13,7 +13,7 @@
     canvas.height = maxSize / ratio
 
     canvas.getContext('2d').drawImage(imgEL, 0, 0, canvas.width, canvas.height)
-    canvas.toBlob(resolve, type)
+    canvas.toBlob(resolve, type, 0.6)
   })
 
   const pFileReader = blob =>
