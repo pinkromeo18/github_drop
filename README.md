@@ -15,7 +15,7 @@ gd.drop(async(file)=>{
  var sha = await gd.is(path)
  var download_url=await gd.up(path,file,sha)
  console.log(download_url)
- var data = await fetch(download_url).then(d=>d.blob);
+ //var data = await fetch(download_url).then(d=>d.blob);
 
 });
 
