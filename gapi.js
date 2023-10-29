@@ -1,13 +1,14 @@
 import { Octokit } from "https://esm.sh/@octokit/core";
 import "//pinkromeo18.github.io/github_drop/resizer.js"
 
-
+/*
 const pu = (d,ispre) =>{
   const el = document.createElement('div')  
   el.innerText = is.string(d)?d:JSON.stringify(d,null,'\n')
   ;ispre? document.body.prepend(el): document.body.append(el)
   return el;
 }
+*/
 
 export function gapi({auth,owner,repo,dir}){
   //////////////////////////////////////////
@@ -95,7 +96,7 @@ export function gapi({auth,owner,repo,dir}){
 
   ///////////////////////////////////////////
   async function up(file,data,isimg){    
-    pu('in up');
+    console.log('in up');
     if(!file) return console.log("up() is need filename!")
 
     let {octokit} = o;
